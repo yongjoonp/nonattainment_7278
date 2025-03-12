@@ -18,7 +18,7 @@ library(rnaturalearthdata)
 # pop <- fread("~/Documents/nonattainment1/data/data_pop_employment.csv")
 
 # load data (for Yongjoon)
-data_path <- "/Users/yongjoonpark/Downloads/shinyproject_data"
+data_path <- "data"
 dt <- fread(sprintf("%s/nonatt_status_72_78.csv", data_path))
 usgeo <- st_read(sprintf("%s/cb_2014_us_county_5m/cb_2014_us_county_5m.shp", data_path))
 aqcr <- st_read(sprintf("%s/aqcr_border/aqcr_border.shp", data_path))
