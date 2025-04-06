@@ -8,7 +8,7 @@ library(dplyr)
 library(RColorBrewer)
 library(rnaturalearth)
 library(rnaturalearthdata)
-library(leaflet.extras2)
+# library(leaflet.extras2)
 
 
 
@@ -150,8 +150,9 @@ drawing_leaplet_map <- function(..obs, yy){
       pal = mypal, 
       values = ~..obs$nonatt_status,
       title = "Non Attainment Status",
-      className = "legend") %>%
-    stopSpinner()
+      className = "legend") 
+    #   %>%
+    # stopSpinner()
 
 }
 
