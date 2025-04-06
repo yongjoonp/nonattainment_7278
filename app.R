@@ -121,7 +121,7 @@ drawing_leaplet_map <- function(..obs, yy){
     clearControls() %>%
     setView(-96, 37.8, 4.5) %>%
     addSpinner() %>%
-    startSpinner(options = list("lines" = 7, "length" = 20)) %>%
+    # startSpinner(options = list("lines" = 7, "length" = 20)) %>%
     addPolygons(
       data = masked_ocean,
       fillColor = "#f8f9fa",
